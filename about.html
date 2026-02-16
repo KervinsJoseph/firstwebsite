@@ -4,51 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
+    <div class="container">
         <header>
         <h1>My About Page</h1>
     </header>
     <section>
-        <form method="post" action="http://webdevbasics.net/scripts/demo.php"
-<div>
-    <label for="myname">Name:</label>
-    <input type="text" id="myname" name="myname">
+        <form method="post" action="http://webdevbasics.net/scripts/demo.php"></form>
+<div class="mb-3">
+    <label for="myname" class="form-label">Name:</label>
+    <input type="text" id="myname" name="myname" class="form-control">
 </div>
-<div>
-    <label for="myemail">Email:</label>
-    <input type="email" id="myemail" name="myemail">
+<div class="mb-3">
+    <label for="myemail" class="form-label">Email:</label>
+    <input type="email" id="myemail" name="myemail" class="form-control">
 </div>
 Choose the browser you use<br>
-<div>
-<input type="checkbox" id="chrome" name="browser" value="chrome">
+<div class="mb-3">
+<input type="checkbox" id="chrome" name="browser" value="chrome" class ="form-check-input"> 
 </div>
 <label for="chrome">Chrome</label><br>
-<div>
-<input type="checkbox" id="firefox" name="browser" value="firefox">
+<div class="mb-3">
+<input type="checkbox" id="firefox" name="browser" value="firefox" class="form-check-input">
 </div>
 <label for="firefox">Firefox</label>
-<div>
-<input type="checkbox" id="Edge" name="browser" value="Microsoft Edge">
+<div class="mb-3">
+<input type="checkbox" id="Edge" name="browser" value="Microsoft Edge" class="form-check-input">
 </div>
 <label for="Edge">Microsoft Edge</label>
 <div>
     Would you like to be on our mailing list?<br>
 </div>
-    <input type="radio" id="yes" name="mailinglist" value="yes">
-    <label for="yes">Yes</label>
+    <input type="radio" id="yes" name="mailinglist" value="yes" class="form-check-input">
+    <label for="yes" class="form-label">Yes</label>
     <div>
-    <input type="radio" id="no" name="mailinglist" value="no">
-    <label for="no">No</label>
+    <input type="radio" id="no" name="mailinglist" value="no" class="form-check-input">
+    <label for="no" class="form-label">No</label>
 </div>
 </div>
-<div>
-    <span for="comments">Comments:</span>
-    <textarea name="comments" id="comments" rows="4" cols="30"></textarea> 
+<div class ="mb-3 input-group">
+    <span for="comments" class="form-label">Comments:</span>
+    <textarea name="comments" id="comments" rows="4" cols="30" class="form-control"></textarea> 
 </div>
-<input type="submit" value="Submit">
-<input type="reset">
+<input type="submit" value="Submit" class="btn btn-primary">
+<input type="reset" class= "btn btn-secondary" value="Reset">
 </form>
     </section>
+    </div>
 </body>
 </html>
